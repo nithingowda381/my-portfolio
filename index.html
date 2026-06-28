@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nithin Gowda M S | AI & ML Engineer</title>
+  <meta name="description" content="Portfolio of Nithin Gowda M S, an AI & ML Engineer specializing in deep learning, computer vision, data analytics, and secure software development.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Premium Mesh Glow Background Elements -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Ambient starfield canvas for subtle depth -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- MINIMALIST SPLASH SCREEN -->
+  <div id="splash-screen">
+    <div class="splash-container">
+      <div class="splash-logo">NITHIN GOWDA</div>
+      <div class="splash-subtitle">ARTIFICIAL INTELLIGENCE & MACHINE LEARNING</div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIXED LEFT HUD NAVIGATOR -->
+  <div id="hud-nav">
+    <div class="hud-line-container">
+      <div class="hud-indicator"></div>
+    </div>
+    <ul class="hud-links">
+      <li><a href="#about" class="hud-link active" data-chapter="01"><span class="hud-num">01</span><span class="hud-text">PROFILE</span></a></li>
+      <li><a href="#skills" class="hud-link" data-chapter="02"><span class="hud-num">02</span><span class="hud-text">EXPERTISE</span></a></li>
+      <li><a href="#experience" class="hud-link" data-chapter="03"><span class="hud-num">03</span><span class="hud-text">EXPERIENCE</span></a></li>
+      <li><a href="#projects" class="hud-link" data-chapter="04"><span class="hud-num">04</span><span class="hud-text">PROJECTS</span></a></li>
+      <li><a href="#certificates" class="hud-link" data-chapter="05"><span class="hud-num">05</span><span class="hud-text">CREDENTIALS</span></a></li>
+      <li><a href="#contact" class="hud-link" data-chapter="06"><span class="hud-num">06</span><span class="hud-text">CONTACT</span></a></li>
+    </ul>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#" class="logo">
+        <span class="logo-accent">NITHIN</span><span class="logo-subtext">GOWDA</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#about" class="nav-item">Profile</a>
+        <a href="#skills" class="nav-item">Expertise</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#certificates" class="nav-item">Credentials</a>
+        <a href="#contact" class="nav-item nav-btn">Get In Touch</a>
+      </nav>
+      <div class="header-socials">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <!-- Inline SVG GitHub Link -->
+        <a href="https://github.com/nithingowda381" target="_blank" class="social-link" title="GitHub" aria-label="GitHub Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+        </a>
+        <!-- Inline SVG LinkedIn Link -->
+        <a href="https://linkedin.com/in/nithingowdru" target="_blank" class="social-link" title="LinkedIn" aria-label="LinkedIn Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-container">
+      <nav class="mobile-nav">
+        <a href="#about" class="mobile-nav-item">01 / PROFILE</a>
+        <a href="#skills" class="mobile-nav-item">02 / EXPERTISE</a>
+        <a href="#experience" class="mobile-nav-item">03 / EXPERIENCE</a>
+        <a href="#projects" class="mobile-nav-item">04 / PROJECTS</a>
+        <a href="#certificates" class="mobile-nav-item">05 / CREDENTIALS</a>
+        <a href="#contact" class="mobile-nav-item">06 / CONTACT</a>
+      </nav>
+      <div class="mobile-socials">
+        <!-- Mobile Theme Toggle -->
+        <button id="theme-toggle-m" class="theme-toggle-btn-m" aria-label="Toggle theme">
+          <span class="theme-m-text">Toggle Theme</span>
+          <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <a href="https://github.com/nithingowda381" target="_blank" class="social-link-m">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> GitHub
+        </a>
+        <a href="https://linkedin.com/in/nithingowdru" target="_blank" class="social-link-m">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN STORY CONTENT -->
+  <main class="story-wrapper">
+
+    <!-- CHAPTER 01: PROFILE (HERO & ABOUT) -->
+    <section id="about" class="story-section scroll-mt">
+      <div class="section-decor">
+        <span class="decor-tag">01 / PROFILE</span>
+        <span class="decor-line"></span>
+      </div>
+      
+      <div class="container grid-two-cols">
+        <div class="hero-narrative">
+          <div class="pre-title">WELCOME TO MY PORTFOLIO</div>
+          <h1 class="gradient-title">AI & ML ENGINEER</h1>
+          <h2 class="sub-narrative">Designing intelligent solutions, securing digital infrastructures.</h2>
+          <p class="section-desc">
+            I am a software developer and researcher dedicated to bridging the gap between advanced machine learning algorithms and practical, secure applications. My work focuses on neural computing networks, predictive modeling, and system architectures.
+          </p>
+          
+          <div class="profile-about-box">
+            <h3 class="about-sub-title">Professional Summary</h3>
+            <p>
+              Graduated with a Bachelor of Engineering in <strong>AI & ML</strong> from <strong>Vivekananda Institute of Technology, Bengaluru</strong> (2022–2026, CGPA: 8.34). I apply algorithmic data analytics and robust computer vision models to solve physical-world industrial problems.
+            </p>
+            <p class="highlight-quote">
+              "Developing software structures that leverage the power of cognitive modeling to deliver safe, verifiable, and performant user solutions."
+            </p>
+          </div>
+          
+          <div class="btn-group">
+            <a href="#projects" class="btn primary-btn flex-center">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </a>
+            <a href="resume/Nithin_Resume.pdf" download class="btn secondary-btn flex-center">
+              <span>Download Resume</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="profile-visualization">
+          <div class="hologram-viewport">
+            <div class="image-wrapper">
+              <img src="https://nithingowda-portfolio.vercel.app/images/image.png" alt="Nithin Gowda" class="profile-img">
+            </div>
+            <div class="hologram-decor tl"></div>
+            <div class="hologram-decor tr"></div>
+            <div class="hologram-decor bl"></div>
+            <div class="hologram-decor br"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 02: EXPERTISE (SKILLS) -->
+    <section id="skills" class="story-section scroll-mt">
+      <div class="section-decor">
+        <span class="decor-tag">02 / EXPERTISE</span>
+        <span class="decor-line"></span>
+      </div>
+      
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-subtitle">A curated map of my technical skillset and core capabilities.</p>
+        </div>
+
+        <div class="skills-layout">
+          <!-- Card 1: Languages -->
+          <div class="skill-card anim-card">
+            <div class="card-glow"></div>
+            <div class="card-header">
+              <h3 class="card-title">Languages</h3>
+            </div>
+            <div class="card-body">
+              <ul class="skills-list">
+                <li><span class="dot"></span> Python <span class="tag-level">Advanced</span></li>
+                <li><span class="dot"></span> C <span class="tag-level">Intermediate</span></li>
+                <li><span class="dot"></span> Java <span class="tag-level">Intermediate</span></li>
+                <li><span class="dot"></span> SQL <span class="tag-level">Intermediate</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 2: AI & ML -->
+          <div class="skill-card anim-card">
+            <div class="card-glow"></div>
+            <div class="card-header">
+              <h3 class="card-title">AI & Deep Learning</h3>
+            </div>
+            <div class="card-body">
+              <ul class="skills-list">
+                <li><span class="dot"></span> TensorFlow & PyTorch</li>
+                <li><span class="dot"></span> Scikit-Learn</li>
+                <li><span class="dot"></span> NumPy & Pandas</li>
+                <li><span class="dot"></span> Computer Vision (VTU Gold)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 3: Databases -->
+          <div class="skill-card anim-card">
+            <div class="card-glow"></div>
+            <div class="card-header">
+              <h3 class="card-title">Data Architectures</h3>
+            </div>
+            <div class="card-body">
+              <ul class="skills-list">
+                <li><span class="dot"></span> MySQL</li>
+                <li><span class="dot"></span> MongoDB</li>
+                <li><span class="dot"></span> Relational Schema Design</li>
+                <li><span class="dot"></span> Query Optimization</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 4: Tools & Concepts -->
+          <div class="skill-card anim-card">
+            <div class="card-glow"></div>
+            <div class="card-header">
+              <h3 class="card-title">Security & Tools</h3>
+            </div>
+            <div class="card-body">
+              <ul class="skills-list">
+                <li><span class="dot"></span> Git & GitHub Versioning</li>
+                <li><span class="dot"></span> Cryptographic Protocols</li>
+                <li><span class="dot"></span> Network Security Audits</li>
+                <li><span class="dot"></span> Steganography Systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 03: EXPERIENCE (TIMELINE) -->
+    <section id="experience" class="story-section scroll-mt">
+      <div class="section-decor">
+        <span class="decor-tag">03 / EXPERIENCE</span>
+        <span class="decor-line"></span>
+      </div>
+      
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Professional Chronology</h2>
+          <p class="section-subtitle">Timeline of my industry engagements and software research internships.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line">
+            <div class="timeline-progress"></div>
+          </div>
+          
+          <!-- Experience Card 1 -->
+          <div class="timeline-item anim-card left">
+            <div class="timeline-badge"></div>
+            <div class="timeline-content">
+              <div class="timeline-glow"></div>
+              <div class="timeline-meta">
+                <span class="company">STALLION COMFORT SYSTEMS</span>
+                <span class="date">Jan 2025 – Apr 2025</span>
+              </div>
+              <h3 class="role">AI Security Intern</h3>
+              <p class="experience-desc">
+                Architected and deployed an AI-enabled CCTV security platform featuring localized intrusion detection and automated facial recognition. Developed computer vision modules in Python to process live video feeds and trigger instant dashboard updates.
+              </p>
+              <div class="skills-tags">
+                <span>Computer Vision</span>
+                <span>System Security</span>
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 2 -->
+          <div class="timeline-item anim-card right">
+            <div class="timeline-badge"></div>
+            <div class="timeline-content">
+              <div class="timeline-glow"></div>
+              <div class="timeline-meta">
+                <span class="company">AICTE INTERNSHIP</span>
+                <span class="date">Dec 2024 – Feb 2025</span>
+              </div>
+              <h3 class="role">Cybersecurity Intern</h3>
+              <p class="experience-desc">
+                Conducted deep-dive research into steganography algorithms and secure cryptographic databases. Developed scripts to secure administrative database profiles and optimize end-to-end payload transmission security.
+              </p>
+              <div class="skills-tags">
+                <span>Cryptography</span>
+                <span>Data Security</span>
+                <span>Steganography</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 3 -->
+          <div class="timeline-item anim-card left">
+            <div class="timeline-badge"></div>
+            <div class="timeline-content">
+              <div class="timeline-glow"></div>
+              <div class="timeline-meta">
+                <span class="company">HUNARINTERN</span>
+                <span class="date">Jun 2024 – Aug 2024</span>
+              </div>
+              <h3 class="role">Cybersecurity Intern</h3>
+              <p class="experience-desc">
+                Conducted penetration testing on local network layers, checking for protocol vulnerabilities. Implemented hash verification algorithms to confirm file structure integrity during transfer operations.
+              </p>
+              <div class="skills-tags">
+                <span>Network Analysis</span>
+                <span>Hash Hashing</span>
+                <span>Risk Auditing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 4 -->
+          <div class="timeline-item anim-card right">
+            <div class="timeline-badge"></div>
+            <div class="timeline-content">
+              <div class="timeline-glow"></div>
+              <div class="timeline-meta">
+                <span class="company">OCTANET</span>
+                <span class="date">Feb 2024 – Mar 2024</span>
+              </div>
+              <h3 class="role">Python Development Intern</h3>
+              <p class="experience-desc">
+                Built a terminal banking ATM simulator. Designed the object structure in Python, handling user data structures, secure transaction registers, balance checking, and input validation security.
+              </p>
+              <div class="skills-tags">
+                <span>Python</span>
+                <span>OOP Logic</span>
+                <span>System Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 04: PROJECTS -->
+    <section id="projects" class="story-section scroll-mt">
+      <div class="section-decor">
+        <span class="decor-tag">04 / PROJECTS</span>
+        <span class="decor-line"></span>
+      </div>
+      
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-subtitle">A collection of custom-built intelligent systems and software solutions. Scroll to overlay.</p>
+        </div>
+
+        <div class="stacking-deck-container projects-deck">
+          <!-- Card 1 -->
+          <div class="deck-card flex-between">
+            <div class="deck-visual-side project-1-bg">
+              <div class="ambient-mesh-glow"></div>
+              <div class="project-num">01</div>
+            </div>
+            <div class="deck-info-side">
+              <span class="project-tag">AI & ML PLATFORM</span>
+              <h3 class="project-name">Agri-Sense</h3>
+              <h4 class="project-desc-short">AI-Powered Crop Diagnostics & Prediction</h4>
+              <p class="project-desc-long">
+                An end-to-end intelligent predictive model for agricultural management. Combines random forest estimators and deep tabular analytics to forecast yield ratios based on nitrogen properties and regional climates. Integrates automated leaf visual diagnosis using CNN models.
+              </p>
+              <div class="project-specs">
+                <div class="spec-item"><span class="s-label">Frameworks:</span> TensorFlow, Scikit-Learn, Pandas</div>
+                <div class="spec-item"><span class="s-label">Deployment:</span> Python Flask Web Engine</div>
+              </div>
+              <div class="deck-links">
+                <a href="https://github.com/nithingowda381" class="deck-link-btn" aria-label="GitHub Repository" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Repository
+                </a>
+                <a href="#" class="deck-link-btn" aria-label="Live Demo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="deck-card flex-between">
+            <div class="deck-visual-side project-2-bg">
+              <div class="ambient-mesh-glow"></div>
+              <div class="project-num">02</div>
+            </div>
+            <div class="deck-info-side">
+              <span class="project-tag">SECURE DATABASE SYSTEM</span>
+              <h3 class="project-name">Forensic Database</h3>
+              <h4 class="project-desc-short">Secure Forensic & Crime Investigation Hub</h4>
+              <p class="project-desc-long">
+                A highly secure relational database schema for managing crime databases. Built secure database triggers and procedures to logs updates automatically. Configured with SHA-256 data protection filters for secure suspect files.
+              </p>
+              <div class="project-specs">
+                <div class="spec-item"><span class="s-label">Core Database:</span> MySQL Schema Design</div>
+                <div class="spec-item"><span class="s-label">Security:</span> Password and Field Hashing</div>
+              </div>
+              <div class="deck-links">
+                <a href="https://github.com/nithingowda381" class="deck-link-btn" aria-label="GitHub Repository" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Repository
+                </a>
+                <a href="#" class="deck-link-btn" aria-label="Live Demo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="deck-card flex-between">
+            <div class="deck-visual-side project-3-bg">
+              <div class="ambient-mesh-glow"></div>
+              <div class="project-num">03</div>
+            </div>
+            <div class="deck-info-side">
+              <span class="project-tag">COMPUTER VISION</span>
+              <h3 class="project-name">DVR Automation</h3>
+              <h4 class="project-desc-short">Real-time CCTV Intelligence Portal</h4>
+              <p class="project-desc-long">
+                Designed a lightweight background automation script for security DVR units. Uses custom YOLO models and OpenCV loops to processes video frames locally, flags anomalies, and logs notifications instantly in the central system.
+              </p>
+              <div class="project-specs">
+                <div class="spec-item"><span class="s-label">Technologies:</span> Python OpenCV, YOLO Object Detection</div>
+                <div class="spec-item"><span class="s-label">Performance:</span> Multithreaded RTSP Streams</div>
+              </div>
+              <div class="deck-links">
+                <a href="https://github.com/nithingowda381" class="deck-link-btn" aria-label="GitHub Repository" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Repository
+                </a>
+                <a href="#" class="deck-link-btn" aria-label="Live Demo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 05: CERTIFICATIONS (STACKING CARDS SCROLL) -->
+    <section id="certificates" class="story-section scroll-mt">
+      <div class="section-decor">
+        <span class="decor-tag">05 / CREDENTIALS</span>
+        <span class="decor-line"></span>
+      </div>
+      
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Certifications & Badges</h2>
+          <p class="section-subtitle">Verified professional credentials and academic badges. Scroll to stack the licenses.</p>
+        </div>
+
+        <!-- Badges Loop Section -->
+        <div class="badges-marquee-container">
+          <div class="marquee-track">
+            <!-- Badge 1 -->
+            <a href="https://www.credly.com/badges/2b3bee0b-5835-45e0-a5ec-28675093c47d/public_url" target="_blank" class="badge-item">
+              <img src="images/Badges/python-essentials-1.1.png" alt="Python Essentials 1">
+              <span class="badge-name">Python Essentials 1</span>
+              <span class="badge-issuer">Cisco Networking Academy</span>
+            </a>
+            <!-- Badge 2 -->
+            <a href="https://www.credly.com/badges/25578ea6-a228-46f0-a0f1-d8525ef35aad/public_url" target="_blank" class="badge-item">
+              <img src="images/Badges/cybersecurity-fundamentals.png" alt="Cybersecurity Fundamentals">
+              <span class="badge-name">Cybersecurity Fundamentals</span>
+              <span class="badge-issuer">IBM SkillsBuild</span>
+            </a>
+            <!-- Badge 3 -->
+            <a href="https://www.credly.com/badges/230098e7-6fe5-4f2b-9f95-2b2efc0f6859/public_url" target="_blank" class="badge-item">
+              <img src="images/Badges/google-cybersecurity-professional-certificate-v2.png" alt="Google Cybersecurity">
+              <span class="badge-name">Google Cybersecurity Professional</span>
+              <span class="badge-issuer">Google & Coursera</span>
+            </a>
+            <!-- Badge 4 -->
+            <a href="https://www.credly.com/badges/6f6388d9-adf8-4a1c-a5d7-b5c3612a0ca6/public_url" target="_blank" class="badge-item">
+              <img src="images/Badges/google-ai-essentials-v1.png" alt="Google AI Essentials">
+              <span class="badge-name">Google AI Essentials</span>
+              <span class="badge-issuer">Google & Coursera</span>
+            </a>
+            <!-- Badge 5 -->
+            <a href="https://www.credly.com/badges/9c336166-8821-4f2c-b9ce-90cc6ab2bb88/public_url" target="_blank" class="badge-item">
+              <img src="images/Badges/data-analysis-using-python.png" alt="Data Analysis with Python">
+              <span class="badge-name">Data Analysis with Python</span>
+              <span class="badge-issuer">IBM Skills Network</span>
+            </a>
+            <!-- Badge 6 -->
+            <a href="https://www.credly.com/badges/ea282690-8e25-494c-999c-7b758d040aa6/public_url" target="_blank" class="badge-item">
+              <img src="images/Badges/ethical-hacker.png" alt="Ethical Hacker">
+              <span class="badge-name">Ethical Hacker</span>
+              <span class="badge-issuer">Cisco Networking Academy</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- STACKING CERTIFICATES DECK (20 Certificate Cards) -->
+        <div class="stacking-deck-container certs-deck mt-12">
+          
+          <!-- Cert 1 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Google Cybersecurity course.jpg" alt="Google Cybersecurity Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / GOOGLE</span>
+              <h3 class="project-name">Google Cybersecurity</h3>
+              <h4 class="project-desc-short">Google Professional Program</h4>
+              <p class="project-desc-long">
+                Certifies industry-level mastery in network thread detection, secure database auditing using SQL, shell scripting, Linux file access controls, and custom Python automation setups.
+              </p>
+              <div class="deck-links">
+                <a href="images/Google Cybersecurity course.jpg" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Cisco Ethical Hacker.png" alt="Cisco Ethical Hacker Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / CISCO</span>
+              <h3 class="project-name">Ethical Hacker</h3>
+              <h4 class="project-desc-short">Cisco Networking Academy</h4>
+              <p class="project-desc-long">
+                Validates core skills in threat reconnaissance, scanning networks, cryptography filters, server exploit vectors, database injection audits, and legal compliance bounds.
+              </p>
+              <div class="deck-links">
+                <a href="images/Cisco Ethical Hacker.png" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Google Ai Essentials.png" alt="Google AI Essentials Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / GOOGLE</span>
+              <h3 class="project-name">Google AI Essentials</h3>
+              <h4 class="project-desc-short">Google Professional Program</h4>
+              <p class="project-desc-long">
+                Completed training on using predictive modeling tools, engineering conversational AI prompts, assessing bias in data subsets, and aligning neural compute systems with standard safety rules.
+              </p>
+              <div class="deck-links">
+                <a href="images/Google Ai Essentials.png" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Compputer Visiom.jpg" alt="Computer Vision Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">ACADEMIC / VTU</span>
+              <h3 class="project-name">Computer Vision</h3>
+              <h4 class="project-desc-short">VTU Elite Gold Program</h4>
+              <p class="project-desc-long">
+                Elite gold certification for deep research on vision transformations, matrix kernels, threshold filtration, convolutional filters, object boundary loops, and local OpenCV integration parameters.
+              </p>
+              <div class="deck-links">
+                <a href="images/Compputer Visiom.jpg" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Al for All.png" alt="AI for All Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / INTEL</span>
+              <h3 class="project-name">AI for All</h3>
+              <h4 class="project-desc-short">Intel & Skill India</h4>
+              <p class="project-desc-long">
+                Completed basic neural network definitions, tabular dataset structures, training optimization scripts, and deployment parameters formulated by Intel to introduce AI methods to aspiring engineers.
+              </p>
+              <div class="deck-links">
+                <a href="images/Al for All.png" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Cyber Security Fundamentals.jpg" alt="Cyber Security Fundamentals" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / IBM</span>
+              <h3 class="project-name">Cybersecurity Fundamentals</h3>
+              <h4 class="project-desc-short">IBM SkillsBuild</h4>
+              <p class="project-desc-long">
+                Validates critical concepts in network layer defenses, scanning protocols, encryption key management, database penetration prevention, system security controls, and ethical bounds auditing.
+              </p>
+              <div class="deck-links">
+                <a href="images/Cyber Security Fundamentals.jpg" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 7 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Artificial Intelligence Search Methods For Problem Solving, IIT Madras.png" alt="AI Search Methods Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">ACADEMIC / IIT MADRAS</span>
+              <h3 class="project-name">AI Search Methods</h3>
+              <h4 class="project-desc-short">NPTEL & IIT Madras</h4>
+              <p class="project-desc-long">
+                Advanced certification covering state space search algorithms, heuristic evaluation models, graph searches (A*, IDA*), adversarial game tree pruning (Alpha-Beta), and constraint satisfaction.
+              </p>
+              <div class="deck-links">
+                <a href="images/Artificial Intelligence Search Methods For Problem Solving, IIT Madras.png" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 8 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Deep Learning for Computer Vision.png" alt="Deep Learning for Computer Vision Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">ACADEMIC / NPTEL</span>
+              <h3 class="project-name">Deep Learning for CV</h3>
+              <h4 class="project-desc-short">Indian Institute of Science (IISc) Program</h4>
+              <p class="project-desc-long">
+                Certified research properties covering Convolutional Neural Networks (CNNs), semantic boundaries segmentation, generative models (GANs, VAEs), visual object tracking, and facial recognition models.
+              </p>
+              <div class="deck-links">
+                <a href="images/Deep Learning for Computer Vision.png" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 9 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Introduction to machine learning-VTU.png" alt="Intro to ML VTU Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">ACADEMIC / VTU</span>
+              <h3 class="project-name">Introduction to Machine Learning</h3>
+              <h4 class="project-desc-short">VTU NPTEL Certification</h4>
+              <p class="project-desc-long">
+                Completed comprehensive coursework on supervised and unsupervised estimators, regression boundaries, decision trees validation, vector machines, clustering metrics, and bias-variance parameters.
+              </p>
+              <div class="deck-links">
+                <a href="images/Introduction to machine learning-VTU.png" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 10 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Python for Data Science.png" alt="Python for Data Science Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">ACADEMIC / NPTEL</span>
+              <h3 class="project-name">Python for Data Science</h3>
+              <h4 class="project-desc-short">NPTEL & IIT Madras</h4>
+              <p class="project-desc-long">
+                Covers advanced data wrangling frameworks, exploratory analysis scripting, regression modeling, statistical validations, and scientific graphing using NumPy, Pandas, Seaborn, and Scikit-Learn.
+              </p>
+              <div class="deck-links">
+                <a href="images/Python for Data Science.png" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 11 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Reinforcement Learning.jpg" alt="Reinforcement Learning Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">ACADEMIC / NPTEL</span>
+              <h3 class="project-name">Reinforcement Learning</h3>
+              <h4 class="project-desc-short">IIT Madras Coursework</h4>
+              <p class="project-desc-long">
+                Advanced studies in Markov Decision Processes (MDPs), Dynamic Programming, Monte Carlo estimation models, Temporal Difference learning, Q-Learning pipelines, and deep Q-networks (DQN).
+              </p>
+              <div class="deck-links">
+                <a href="images/Reinforcement Learning.jpg" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 12 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/data Analysis With Python by Cognitive Class.jpeg" alt="Data Analysis IBM Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / IBM</span>
+              <h3 class="project-name">Data Analysis with Python</h3>
+              <h4 class="project-desc-short">Cognitive Class Validation</h4>
+              <p class="project-desc-long">
+                Completed database integration loops, statistical variance tests, linear trend models, data cleaning operations, and regression diagnostics utilizing Python tools.
+              </p>
+              <div class="deck-links">
+                <a href="images/data Analysis With Python by Cognitive Class.jpeg" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 13 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Data Analytics with Python.png" alt="Data Analytics VTU Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">ACADEMIC / VTU</span>
+              <h3 class="project-name">Data Analytics with Python</h3>
+              <h4 class="project-desc-short">VTU Certification Program</h4>
+              <p class="project-desc-long">
+                Coursework covering multivariate analysis, mathematical covariance modeling, data visual mapping methods, correlation tests, and predictive statistics using SciPy.
+              </p>
+              <div class="deck-links">
+                <a href="images/Data Analytics with Python.png" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 14 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Learning Analytics Tools.png" alt="Learning Analytics Tools Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">ACADEMIC / NPTEL</span>
+              <h3 class="project-name">Learning Analytics Tools</h3>
+              <h4 class="project-desc-short">IIT Bombay Program</h4>
+              <p class="project-desc-long">
+                Certified evaluation structures on data mining pipelines, classification algorithms, tracking user interactions, and visual dashboard design for institutional learning systems.
+              </p>
+              <div class="deck-links">
+                <a href="images/Learning Analytics Tools.png" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 15 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Networking Basics.png" alt="Networking Basics Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / CISCO</span>
+              <h3 class="project-name">Networking Basics</h3>
+              <h4 class="project-desc-short">Cisco Networking Academy</h4>
+              <p class="project-desc-long">
+                Completed validation testing for IP routing, subnet configuration loops, TCP/UDP layers definitions, active packet filters, and domain system lookups.
+              </p>
+              <div class="deck-links">
+                <a href="images/Networking Basics.png" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 16 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Python Essentials 1.png" alt="Python Essentials Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / CISCO</span>
+              <h3 class="project-name">Python Essentials 1</h3>
+              <h4 class="project-desc-short">Cisco OpenEDG validation</h4>
+              <p class="project-desc-long">
+                Certifies logical syntax capabilities: conditional flow loops, recursive arrays, variables functions, classes scope, data inputs formatting, and clean execution scripts.
+              </p>
+              <div class="deck-links">
+                <a href="images/Python Essentials 1.png" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 17 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Python basics hackerank.jpg" alt="Python Basics HackerRank Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / HACKERRANK</span>
+              <h3 class="project-name">Python Basics</h3>
+              <h4 class="project-desc-short">HackerRank Skills Assessment</h4>
+              <p class="project-desc-long">
+                Certified baseline problem-solving abilities: list comprehensions, functional algorithms, dictionary properties, data structures, and text filtering regex tools.
+              </p>
+              <div class="deck-links">
+                <a href="images/Python basics hackerank.jpg" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 18 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/C Programming basics to Advanance Level.jpg" alt="C Programming Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / UDEMY</span>
+              <h3 class="project-name">C Programming</h3>
+              <h4 class="project-desc-short">Basics to Advance Level Validation</h4>
+              <p class="project-desc-long">
+                Completed core programming fundamentals covering memory address pointers, registers, struct headers, dynamic arrays sizing, logic loops, and custom header library builds.
+              </p>
+              <div class="deck-links">
+                <a href="images/C Programming basics to Advanance Level.jpg" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 19 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Angular for beginners from Basics to Advance.jpg" alt="Angular Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / UDEMY</span>
+              <h3 class="project-name">Angular for Beginners</h3>
+              <h4 class="project-desc-short">Basics to Advance Level Course</h4>
+              <p class="project-desc-long">
+                Completed front-end model-view-controller systems training: component boundaries setup, state routing, DOM template tags, HTTP communications, and reactive form validation scripts.
+              </p>
+              <div class="deck-links">
+                <a href="images/Angular for beginners from Basics to Advance.jpg" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 20 -->
+          <div class="deck-card flex-between cert-deck-card">
+            <div class="deck-visual-side cert-full-img-side">
+              <img src="images/Internet of Things (iot).jpg" alt="IoT Certificate" class="full-cert-img">
+            </div>
+            <div class="deck-info-side cert-deck-info">
+              <span class="project-tag">CREDENTIAL / UDEMY</span>
+              <h3 class="project-name">Internet of Things</h3>
+              <h4 class="project-desc-short">IoT System Architecture</h4>
+              <p class="project-desc-long">
+                Completed sensor circuit architecture design, local controller logic mapping (Arduino/Raspberry Pi), MQTT data channels, and cloud portal interface integration parameters.
+              </p>
+              <div class="deck-links">
+                <a href="images/Internet of Things (iot).jpg" target="_blank" class="btn primary-btn flex-center inline-flex">
+                  <span>View Original License</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 06: CONTACT -->
+    <section id="contact" class="story-section scroll-mt last-section">
+      <div class="section-decor">
+        <span class="decor-tag">06 / CONTACT</span>
+        <span class="decor-line"></span>
+      </div>
+      
+      <div class="container max-w-sm">
+        <div class="section-header text-center">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's discuss internship opportunities, software systems, or data projects.</p>
+        </div>
+
+        <div class="contact-box-container anim-card">
+          <form class="business-form" action="https://formsubmit.co/nithingowda381@gmail.com" method="POST">
+            <!-- Honeypot spam protection -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- Custom email templates & configurations -->
+            <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+            <input type="hidden" name="_next" value="https://nithingowda-portfolio.vercel.app/">
+            
+            <div class="form-group-field">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group-field">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group-field">
+              <label for="contact-msg">Message</label>
+              <textarea id="contact-msg" name="message" rows="4" placeholder="How can I help you? Detail your project request..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn flex-center">
+              <span>Send Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="fallback-comms grid-two-cols mt-12">
+          <div class="fallback-card flex-center flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span class="fallback-label">EMAIL ADDRESS</span>
+            <a href="mailto:nithingowda381@gmail.com" class="fallback-val">nithingowda381@gmail.com</a>
+          </div>
+          <div class="fallback-card flex-center flex-col">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span class="fallback-label">PHONE NUMBER</span>
+            <a href="tel:+918310790963" class="fallback-val">+91 8310790963</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="system-footer">
+    <div class="footer-container">
+      <div class="footer-meta">
+        <span>NITHIN GOWDA M S</span>
+        <span>AI & ML ENGINEER</span>
+        <span>BANGALORE, INDIA</span>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Nithin Gowda M S. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="particles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
