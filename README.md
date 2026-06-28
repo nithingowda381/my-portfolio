@@ -38,15 +38,15 @@ I am a Bachelor of Engineering graduate in **Artificial Intelligence & Machine L
 
 ## 🛠 Featured Work
 
-### 🌾 [Agri-Sense](https://github.com/nithingowda381)
+### 🌾 [Agri-Sense](https://github.com/nithingowda381/Agri-Sense)
 * **Description:** An end-to-end predictive crop diagnostic platform. Uses random forest estimators to forecast yield ratios based on soil chemical compositions and regional climates, combined with a CNN model to diagnose crop leaf diseases.
 * **Stack:** TensorFlow, Scikit-Learn, Pandas, Python Flask.
 
-### 🛡️ [Forensic Database](https://github.com/nithingowda381)
+### 🛡️ [Forensic Database](https://github.com/nithingowda381/FORENSIC-INVESTIGATION-AND-CRIME-MANAGEMENT-SYSTEM.)
 * **Description:** A secure relational database system containing suspect profiles. Built procedural triggers to audit data changes in the background and implemented SHA-256 password hashing protocols.
 * **Stack:** MySQL, Relational Database Design.
 
-### 🎥 [DVR Automation](https://github.com/nithingowda381)
+### 🎥 [DVR Automation](https://github.com/nithingowda381/CamCrtlX)
 * **Description:** A background automation script for CCTV security DVRs. Uses YOLO models to process incoming RTSP feeds locally, flagging structural threats and logging alerts.
 * **Stack:** Python, OpenCV, YOLO.
 
@@ -70,7 +70,7 @@ I am a Bachelor of Engineering graduate in **Artificial Intelligence & Machine L
 
 * **LinkedIn:** [linkedin.com/in/nithingowdru](https://linkedin.com/in/nithingowdru)
 * **Email:** [nithingowda381@gmail.com](mailto:nithingowda381@gmail.com)
-* **Portfolio Website:** [nithingowda-portfolio.vercel.app](https://nithingowda-portfolio.vercel.app/)
+* **Portfolio Website:** [nithingowda-portfolio.vercel.app](https://nithingowda381.github.io/my-portfolio//)
 
 ---
 
