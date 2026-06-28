@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const splashScreen = document.getElementById("splash-screen");
   const body = document.body;
 
+  // Set contact form dynamic return URL to the current page location
+  const redirectInput = document.getElementById("form-redirect-next");
+  if (redirectInput) {
+    redirectInput.value = window.location.href;
+  }
+
   // Always play splash screen for dynamic entry experience on refreshes
   runProfessionalSplash();
 
